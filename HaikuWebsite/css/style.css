@@ -1,0 +1,76 @@
+:root {
+    --paper: #f5efe7;
+    --ink: #2d211d;
+    --accent: #a14d35;
+    --shadow: rgba(45, 33, 29, 0.15);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #fffaf3 0%, var(--paper) 40%, #eadcc4 100%);
+    color: var(--ink);
+    font-family: "Courier New", Courier, monospace;
+}
+
+.page {
+    width: 1200px;
+    margin: 40px auto;
+    padding: 30px 0;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.28);
+    border: 1px solid rgba(45, 33, 29, 0.15);
+    border-radius: 18px;
+    box-shadow: 0 24px 60px var(--shadow);
+}
+
+h1 {
+    margin: 0;
+    font-size: 48px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.author {
+    margin: 15px 0 30px;
+    font-size: 16px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(45, 33, 29, 0.75);
+}
+
+.art {
+    margin: 30px 0;
+    padding: 0;
+}
+
+.art img {
+    display: block;
+    width: 1200px;
+    height: auto;
+    border-radius: 0;
+    box-shadow: 0 18px 34px rgba(45, 33, 29, 0.12);
+}
+
+.haiku {
+    margin: 30px auto;
+    font-size: 28px;
+    line-height: 1.9;
+}
+
+.haiku p {
+    margin: 0;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.haiku .third {
+    margin-top: 10px;
+    color: var(--accent);
+    font-weight: 700;
+    letter-spacing: 0.03em;
+}
